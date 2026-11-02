@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velore Watches | Collection</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111111;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #080808;
+            border-bottom: 1px solid #333;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 55px 20px 35px;
+        }
+
+        .heading h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .gold {
+            color: #d4af37;
+        }
+
+        .heading p {
+            color: #bbbbbb;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 28px;
+            padding: 20px 8% 70px;
+        }
+
+        .card {
+            background: #1b1b1b;
+            border: 1px solid #333;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #d4af37;
+        }
+
+        .card img {
+            width: 100%;
+            height: 55%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .details {
+            padding: 22px;
+        }
+
+        .details h2 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .details p {
+            color: #bbbbbb;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .price {
+            color: #d4af37;
+            font-size: 23px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #d4af37;
+            color: #111111;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #aaaaaa;
+            background: #080808;
+        }
+
+        @media (max-width: 900px) {
+            .products {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2.5;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+                padding: 20px 7% 50px;
+            }
+
+            .heading h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Velore</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="first page.html">About</a>
+        <a href="second.html">Men</a>
+        <a href="third.html">Women</a>
+        <a href="fourth.html">Contact</a>
+    </nav>
+</header>
+
+<section class="heading">
+    <h1>Our <span class="gold">Collection</span></h1>
+    <p>Find the perfect watch for your unique style.</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img
+            src="m5.jpeg"
+            alt="Classic silver wristwatch">
+
+        <div class="details">
+            <h2>Classic White</h2>
+            <p>A refined everyday watch with a clean, modern look.</p>
+            <div class="price">₹2,499</div>
+            <a href="contact.html" class="btn">BUY NOW</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img
+            src="m1.jpeg" height="100px" width="1500px"
+            alt="Luxury black wristwatch">
+
+        <div class="details">
+            <h2>Midnight Black</h2>
+            <p>A bold design for a confident and contemporary look.</p>
+            <div class="price">₹3,499</div>
+            <a href="contact.html" class="btn">BUY NOW</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img
+            src="m2.jpeg"
+            alt="Premium wristwatch">
+
+        <div class="details">
+            <h2>Royal Edition</h2>
+            <p>A sophisticated statement piece for special occasions.</p>
+            <div class="price">₹4,999</div>
+            <a href="contact.html" class="btn">BUY NOW</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img
+            src="m3.jpeg"
+            alt="Modern sports watch">
+
+        <div class="details">
+            <h2>Phantom Elite</h2>
+            <p>A versatile style inspired by an active lifestyle.</p>
+            <div class="price">₹2,999</div>
+            <a href="contact.html" class="btn">BUY NOW</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img
+            src="m6.jpeg"
+            alt="Elegant designer watch">
+
+        <div class="details">
+            <h2>Heritage Time</h2>
+            <p>A classic-inspired design for timeless sophistication.</p>
+            <div class="price">₹3,799</div>
+            <a href="contact.html" class="btn">BUY NOW</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img
+            src="m4.jpeg"
+            alt="Premium fashion watch">
+
+        <div class="details">
+            <h2>Royal Chronograph</h2>
+            <p>An elegant finishing touch for your premium wardrobe.</p>
+            <div class="price">₹5,499</div>
+            <a href="contact.html" class="btn">BUY NOW</a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Velore Watches | Designed with Elegance
+</footer>
+
+</body>
+</html>
