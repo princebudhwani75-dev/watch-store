@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velore Watches | Contact</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111111;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #080808;
+            border-bottom: 1px solid #333;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 55px 20px;
+            background: #1b1b1b;
+        }
+
+        .heading h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .gold {
+            color: #d4af37;
+        }
+
+        .heading p {
+            color: #bbbbbb;
+        }
+
+        .contact-container {
+            max-width: 1050px;
+            margin: 50px auto;
+            padding: 0 25px;
+            display: flex;
+            gap: 40px;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding: 25px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            color: #cccccc;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            flex: 1;
+            background: #1b1b1b;
+            border: 1px solid #333;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .contact-form h2 {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 20px;
+            background: #111111;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 3px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: 1px solid #d4af37;
+            border-color: #d4af37;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #d4af37;
+            color: #111111;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #aaaaaa;
+            background: #080808;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2.5;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .contact-container {
+                flex-direction: column;
+                margin: 25px auto;
+                padding: 0 7%;
+            }
+
+            .contact-info {
+                padding: 10px;
+            }
+
+            .heading h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Velore</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="first page.html">About</a>
+        <a href="second.html">Men</a>
+        <a href="third.html">Women</a>
+        <a href="fourth.html">Contact</a>
+    </nav>
+</header>
+
+<section class="heading">
+    <h1>Contact <span class="gold">Us</span></h1>
+    <p>We would love to hear from you.</p>
+</section>
+
+<section class="contact-container">
+
+    <div class="contact-info">
+        <h2>Let's <span class="gold">Connect</span></h2>
+
+        <p>
+            Have a question about our collection or need help choosing
+            your perfect watch? Send us a message.
+        </p>
+
+        <p>
+            <strong class="gold">Brand:</strong><br>
+            Velore Watches
+        </p>
+
+        <p>
+            <strong class="gold">Email:</strong><br>
+            velore123@gmail.com
+        </p>
+
+        <p>
+            <strong class="gold">Location:</strong><br>
+            Ahmedabad, India
+        </p>
+
+        <p>
+            <strong class="gold">Business Hours:</strong><br>
+            Monday - Saturday<br>
+            10:00 AM - 7:00 PM
+        </p>
+    </div>
+
+    <form class="contact-form" action="#" method="get">
+        <h2>Send a <span class="gold">Message</span></h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+            <option value="">Choose a subject</option>
+            <option value="product">Product Enquiry</option>
+            <option value="order">Order Enquiry</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message"
+                  placeholder="Write your message here..."
+                  required></textarea>
+
+        <button type="submit">SEND MESSAGE</button>
+    </form>
+
+</section>
+
+<footer>
+    © 2026 Velore Watches | Designed with Elegance
+</footer>
+
+</body>
+</html>
