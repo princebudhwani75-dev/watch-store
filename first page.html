@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora Watches | About Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111111;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #080808;
+            border-bottom: 1px solid #333;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 65px 20px;
+            background: #1b1b1b;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .gold {
+            color: #d4af37;
+        }
+
+        .banner p {
+            color: #bbbbbb;
+        }
+
+        .about {
+            max-width: 1100px;
+            margin: auto;
+            padding: 65px 25px;
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .about img {
+            width: 48%;
+            border-radius: 5px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #cccccc;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+
+        .values {
+            background: #191919;
+            text-align: center;
+            padding: 50px 8%;
+        }
+
+        .values h2 {
+            margin-bottom: 25px;
+        }
+
+        .values h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .value-list {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .value {
+            padding: 20px;
+            border: 1px solid #444;
+            flex: 1 1 200px;
+            max-width: 300px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #aaaaaa;
+            background: #080808;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2.5;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            .about img {
+                width: 100%;
+            }
+
+            .banner h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VELORE.</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="first page.html">About</a>
+        <a href="second.html">Men</a>
+        <a href="third.html">Women</a>
+        <a href="fourth.html">Contact</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <h1>Our <span class="gold">Story</span></h1>
+    <p>Discover the passion behind every second.</p>
+</section>
+
+<section class="about">
+    <img
+        src="about us.jpeg" height="550px" width="2500px">
+        
+
+    <div class="about-text">
+        <h2>About <span class="gold">Velore Watches</span></h2>
+
+        <p>
+            At Velore, we believe a watch is more than an accessory.
+            It reflects personality, ambition and timeless elegance.
+        </p>
+
+        <p>
+            Our collection brings together sophisticated designs,
+            versatile styles and a modern approach to everyday luxury.
+        </p>
+
+        <p>
+            Whether you are dressing for a business meeting or a
+            special celebration, Velore helps you complete your look.
+        </p>
+    </div>
+</section>
+
+<section class="values">
+    <h2>Our <span class="gold">Values</span></h2>
+
+    <div class="value-list">
+        <div class="value">
+            <h3>Elegance</h3>
+            <p>Designs made to leave a lasting impression.</p>
+        </div>
+
+        <div class="value">
+            <h3>Quality</h3>
+            <p>Attention to detail in every design we present.</p>
+        </div>
+
+        <div class="value">
+            <h3>Trust</h3>
+            <p>A customer-first approach to every interaction.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Velore Watches | Designed with Elegance
+</footer>
+
+</body>
+</html>
